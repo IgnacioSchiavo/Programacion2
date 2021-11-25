@@ -1,0 +1,363 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+
+        <title>Programación I | Parcial 2 | SCHIAVO IGNACIO JULIAN </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
+		<link rel="shortcut icon" href="favicon.ico" />
+		<link rel="stylesheet" href="estilo.css" />
+		<link rel="stylesheet" href="bootstrap.css">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery_cycle.js"></script>
+
+    </head>
+    <body>
+        <header>
+            <h1>Programación I | Parcial 2 |SCHIAVO IGNACIO JULIAN | Carrito</h1>
+        </header>
+
+        <!-- BANNER SECTION -->
+
+        <section class="container p-0">
+            <div id="fotos" class="carousel slide" data-bs-ride="carousel">
+       
+                   <div class="carousel-inner">
+                       <div class="carousel-item active">
+                           <img class="d-block w-100" src="img/banner1.jpg" alt="banner kanton fotos productos">
+                       </div>
+                       <div class="carousel-item">
+                           <img class="d-block w-100" src="img/banner2.jpg" alt="banner kanton fotos productos">
+                       </div>
+                       <div class="carousel-item">
+                           <img class="d-block w-100" src="img/banner3.jpg" alt="banner kanton fotos productos">
+                       </div>
+                   </div>
+                   
+                   <button class="carousel-control-prev " type="button" data-bs-target="#fotos" data-bs-slide="prev">
+                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                       <span class="visually-hidden">Anterior</span>
+                   </button>
+       
+                   <button class="carousel-control-next" type="button" data-bs-target="#fotos" data-bs-slide="next">
+                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                       <span class="visually-hidden">Siguiente</span>
+                   </button>
+               </div>
+           </section>
+
+        <!-- END BANNER SECTION -->
+
+        <!-- PRODUCTS -->	
+	
+<section  class="container">
+			<div id="minicarrito">
+				<button class="btn btn-success my-1 btn-lg" id="ver-carrito">Ver carrito</button>
+				<ul id="lista"></ul>
+				<button class="btn btn-danger my-1 btn-lg" id="reset">Vaciar carrito</button>
+			</div>
+			
+			
+			<h2>Productos DeepTechnology</h2>		
+			<div class="bg-white" id="productos">
+				<div>
+					<img data-bs-toggle="modal" data-bs-target="#modal2" src="img/producto1.jpg" alt="Nombre del producto" />
+					<p><strong>Logitech G203:</strong> <em>$2500</em></p>
+					<button data-id="1" data-val="250" class="add btn btn-secondary my-1 btn-lg">+</button>
+					<button data-id="1" data-val="250" class="del btn btn-light my-1 btn-lg">-</button>
+				</div>
+				<div>
+					<img data-bs-toggle="modal" data-bs-target="#modal3" src="img/producto2.jpg" alt="Nombre del producto" />
+					<p><strong>Redragon Zeus 2:</strong> <em>$6900</em></p>
+					<button data-id="2" data-val="100" class="add btn btn-secondary my-1 btn-lg">+</button>
+					<button data-id="2" data-val="100" class="del btn btn-light my-1 btn-lg">-</button>
+				</div>
+				<div>
+					<img data-bs-toggle="modal" data-bs-target="#modal4" src="img/producto3.jpg" alt="Nombre del producto" />
+					<p><strong>Tabla de picar:</strong> <em>$5500</em></p>
+					<button data-id="3" data-val="200" class="add btn btn-secondary my-1 btn-lg">+</button>
+					<button data-id="3" data-val="200" class="del btn btn-light my-1 btn-lg">-</button>
+				</div>
+				<div>
+					<img data-bs-toggle="modal" data-bs-target="#modal5" src="img/producto4.jpg" alt="Nombre del producto" />
+					<p><strong>Difusor té:</strong> <em>$27000</em></p>
+					<button data-id="4" data-val="125" class="add btn btn-secondary my-1 btn-lg">+</button>
+					<button data-id="4" data-val="125" class="del btn btn-light my-1 btn-lg">-</button>
+				</div>
+				<div>
+					<img data-bs-toggle="modal" data-bs-target="#modal6" src="img/producto5.jpg" alt="Nombre del producto" />
+					<p><strong>Escurridor bacha:</strong> <em>$43000</em></p>
+					<button data-id="5" data-val="500" class="add btn btn-secondary my-1 btn-lg">+</button>
+					<button data-id="5" data-val="500" class="del btn btn-light my-1 btn-lg">-</button>
+				</div>
+				<div>
+					<img data-bs-toggle="modal" data-bs-target="#modal7" src="img/producto6.jpg" alt="Nombre del producto" />
+					<p><strong>Bowl plastico:</strong> <em>$6000</em></p>
+					<button data-id="6" data-val="300" class="add btn btn-secondary my-1 btn-lg">+</button>
+					<button data-id="6" data-val="300" class="del btn btn-light my-1 btn-lg">-</button>
+					
+				</div>
+				<div>
+					<img data-bs-toggle="modal" data-bs-target="#modal8" src="img/producto7.jpg" alt="Nombre del producto" />
+					<p><strong>Gabinete Aerocool Mecha:</strong> <em>$4800</em></p>
+					<button data-id="7" data-val="150" class="add btn btn-secondary my-1 btn-lg">+</button>
+					<button data-id="7" data-val="150" class="del btn btn-light my-1 btn-lg">-</button>
+					
+				</div>
+				<div>
+					<img data-bs-toggle="modal" data-bs-target="#modal9" src="img/producto8.jpg" alt="Nombre del producto" />
+					<p><strong>Tapa para bowl:</strong> <em>$75999</em></p>
+					<button data-id="8" data-val="50" class="add btn btn-secondary my-1 btn-lg">+</button>
+					<button data-id="8" data-val="50" class="del btn btn-light my-1 btn-lg">-</button>
+					
+				</div>
+				<div>
+					<img data-bs-toggle="modal" data-bs-target="#modal10" src="img/producto9.jpg" alt="Nombre del producto" />
+					<p><strong>Separador Huevo Yema:</strong> <em>$3300</em></p>
+					<button data-id="9" data-val="150" class="add btn btn-secondary my-1 btn-lg">+</button>
+					<button data-id="9" data-val="150" class="del btn btn-light my-1 btn-lg">-</button>
+					
+				</div>
+			</div>
+				
+            <div class="alert alert-secondary alert-dismissible fade show fixed-bottom" role="alert">
+                <h3 class="alert-heading">Carrito:</h3>
+                <pre style="font-size: 2em; color: black;"></pre>
+            </div>
+
+			
+			
+			<div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby ="titulo_modal2" aria-hidden="true">
+
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal8-title" id="titulo_modal8"><img class="mini-logo" src="img/logo.jpg"></h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Botón de cierre">
+                                </button>
+                            </div>
+                            <div class="modal2-body ">
+                                <img class="card-img-top" src="img/producto1.jpg" alt="imagen">
+								<h3 class="m-2 text-dark"> Mouse Logitech 6203</h3>
+								<p class="card-text m-2 text-dark">"El mejor mouse que se adapte a tu mano y a tu forma de jugar "</p>
+								<ul >
+								<li class="text-dark">*Dimensiones: 116.6 mm × 62.15 mm × 38.2 mm</li>
+								<li class="text-dark">*Peso: 85 gr </li>
+								<li class="text-dark">*N.º de botones extra: 3</li>
+								<li class="text-dark">*DPI MÁX: 8.000</li>
+								</ul>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+			
+				
+				<div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby ="titulo_modal3" aria-hidden="true">
+
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal8-title" id="titulo_modal8"><img class="mini-logo" src="img/logo.jpg"></h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Botón de cierre">
+                                </button>
+                            </div>
+                            <div class="modal3-body ">
+                                <img class="card-img-top" src="img/11img.jpg" alt="imagen">
+								<h3 class="m-2 text-dark"> Soporte celular </h3>
+								<p class="card-text m-2 text-dark"> Sostiene tu celular o la tablet y ideal para ver videos con niños</p>
+								<ul >
+								<li class="text-dark">*Material: Plástico BPA FREE</li>
+								<li class="text-dark">*Medidas: 12 cm </li>
+								<li class="text-dark">*Color: Rosa</li>
+								<li class="text-dark">*Origen: Argentina</li>
+								</ul>
+                            </div>      
+                        </div>
+                    </div>
+                </div>
+			
+			<div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby ="titulo_modal4" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal8-title" id="titulo_modal8"><img class="mini-logo" src="img/logo.jpg"></h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Botón de cierre">
+                                </button>
+                            </div>
+                            <div class="modal4-body ">
+                                <img class="card-img-top" src="img/12img.jpg" alt="imagen">
+								<h3 class="m-2 text-dark"> Tabla de picar </h3>
+								<p class="card-text m-2 text-dark"> Las tablas de picar son de plástico BPA FREE, resistentes, fuertes y reutilizables. </p>
+								<ul >
+								<li class="text-dark">*Material: Plástico BPA FREE</li>
+								<li class="text-dark">*Medidas: 30 cm </li>
+								<li class="text-dark">*Color: Celeste</li>
+								<li class="text-dark">*Origen: Argentina</li>
+								</ul>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+			
+			<div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby ="titulo_modal5" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal8-title" id="titulo_modal8"><img class="mini-logo" src="img/logo.jpg"></h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Botón de cierre">
+                                </button>
+                            </div>
+                            <div class="modal5-body ">
+                                <img class="card-img-top" src="img/13img.jpg" alt="imagen">
+								<h3 class="m-2 text-dark"> Difusor té </h3>
+								<p class="card-text m-2 text-dark"> Mini colador, ideal para té en hebras.</p>
+								<ul >
+								<li class="text-dark">*Material: Plástico BPA FREE</li>
+								<li class="text-dark">*Medidas: 10 cm </li>
+								<li class="text-dark">*Color: Rosa</li>
+								<li class="text-dark">*Origen: Argentina</li>
+								</ul>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+			
+			<div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby ="titulo_modal6" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal8-title" id="titulo_modal8"><img class="mini-logo" src="img/logo.jpg"></h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Botón de cierre">
+                                </button>
+                            </div>
+                            <div class="modal6-body">
+                                <img class="card-img-top" src="img/14img.jpg" alt="imagen">
+								<h3 class="m-2 text-dark"> Escurridor bacha </h3>
+								<p class="card-text m-2 text-dark"> Lava tus verduras o seca tus cubiertos, tamaño universal para todas las cocinas. </p>
+								<ul >
+								<li class="text-dark">*Material: Plástico BPA FREE</li>
+								<li class="text-dark">*Medidas: 27 cm </li>
+								<li class="text-dark">*Color: Verde aqua</li>
+								<li class="text-dark">*Origen: Argentina</li>
+								</ul>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+			
+			<div class="modal fade" id="modal7" tabindex="-1" role="dialog" aria-labelledby ="titulo_modal7" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal8-title" id="titulo_modal8"><img class="mini-logo" src="img/logo.jpg"></h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Botón de cierre">
+                                </button>
+                            </div>
+                            <div class="modal7-body ">
+                                <img class="card-img-top" src="img/15img.jpg" alt="imagen">
+								<h3 class="m-2 text-dark"> Bowl plástico</h3>
+								<p class="card-text m-2 text-dark"> Compotera, ensaladera, producto multifuncional escencial</p>
+								<ul >
+								<li class="text-dark">*Material: Plástico BPA FREE</li>
+								<li class="text-dark">*Medidas: 20 cm </li>
+								<li class="text-dark">*Color: violeta</li>
+								<li class="text-dark">*Origen: Argentina</li>
+								</ul>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>	
+			<div class="modal fade" id="modal8" tabindex="-1" role="dialog" aria-labelledby ="titulo_modal8" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal8-title" id="titulo_modal8"><img class="mini-logo" src="img/logo.jpg"></h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Botón de cierre">
+                                </button>
+                            </div>
+                            <div class="modal8-body ">
+                                <img class="card-img-top" src="img/gabinete.jpg" alt="imagen">
+								<h3 class="m-2 text-dark"> Gabinete</h3>
+								<p class="card-text m-2 text-dark"> canaliza líquidos y materiales sólidos en recipientes con bocas angostas. </p>
+								<ul >
+								<li class="text-dark">*Material: Plástico BPA FREE</li>
+								<li class="text-dark">*Medidas: 15 cm </li>
+								<li class="text-dark">*Color: celeste</li>
+								<li class="text-dark">*Origen: Argentina</li>
+								</ul>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>		
+			<div class="modal fade" id="modal9" tabindex="-1" role="dialog" aria-labelledby ="titulo_modal9" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal8-title" id="titulo_modal8"><img class="mini-logo" src="img/logo.jpg"></h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Botón de cierre">
+                                </button>
+                            </div>
+                            <div class="modal9-body ">
+                                <img class="card-img-top" src="img/17img.jpg" alt="imagen">
+								<h3 class="m-2 text-dark"> Tapa para bowl</h3>
+								<p class="card-text m-2 text-dark"> Guarda tus comidas con mayor protección para mantenerlos frescos y sin olor por más tiempo. </p>
+								<ul >
+								<li class="text-dark">*Material: Plástico BPA FREE</li>
+								<li class="text-dark">*Medidas: 20 cm </li>
+								<li class="text-dark">*Color: Transparente</li>
+								<li class="text-dark">*Origen: Argentina</li>
+								</ul>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>	
+				<div class="modal fade" id="modal10" tabindex="-1" role="dialog" aria-labelledby ="titulo_modal10" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal8-title" id="titulo_modal8"><img class="mini-logo" src="img/logo.jpg"></h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Botón de cierre">
+                                </button>
+                            </div>
+                            <div class="modal10-body ">
+                                <img class="card-img-top" src="img/18img.jpg" alt="imagen">
+								<h3 class="m-2 text-dark"> Separador huevo y yema</h3>
+								<p class="card-text m-2 text-dark"> Su funcion es separar la clara del huevo con la yema, utensillio de cocina ideal para repostería. </p>
+								<ul >
+								<li class="text-dark">*Material: Plástico BPA FREE</li>
+								<li class="text-dark">*Medidas: 15 cm </li>
+								<li class="text-dark">*Color: Celeste</li>
+								<li class="text-dark">*Origen: Argentina</li>
+								</ul>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+</section>
+
+        <footer>
+            <ul>
+                <li>Profesor Federico Noto</li>
+                <li>
+                    <a href="mailto:federico.noto@davinci.edu.ar?subject=P1%20-%20Consulta%20-%20DW2[M|T|N][A|B]%20-%20Apellido,%20Nombre" target="_blank">federico.noto@davinci.edu.ar</a>
+                </li>
+                <li>Programación 1</li>
+            </ul>
+        </footer>
+
+        <script src="parcial.js"> </script>
+	<script src="js/bootstrap.bundle.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>    
+    <script src="js/animaScroll.js"></script>
+    <script src="js/marcaBoton.js"></script>
+
+    </body>
+</html>
